@@ -17,25 +17,40 @@ A lightweight, feature-rich Arch Linux environment for Termux
 
 ---
 
-## 📖 Overview
+##  Overview
 
 **MyLinux** transforms your Android device into a powerful Linux workstation by installing a fully-featured Arch Linux environment within Termux using `proot-distro`. No root access required!
 
 ---
 
-## ✨ Key Features
+ IMPORTANT NOTE — TERMUX VERSION
 
-- ✅ One-click installation — Fully automated setup process  
-- 🧭 Interactive menu system — Beautiful CLI interface with 8+ integrated tools  
-- 🛠️ Pre-installed tools — Network scanning, system monitoring, and development tools  
-- 🌈 Colorful interface — ASCII banners with `figlet` and `lolcat`  
-- 📊 System information — Automatic `neofetch` display on login  
-- 🔁 Auto-updater — Keep all tools current with one command  
-- 🧼 Uninstaller included — Clean removal when needed  
+ Do NOT use Termux from the Google Play Store.
+
+The version on Play Store is outdated and lacks necessary permissions for running proot-distro or installing full Linux environments. This may cause the installation to fail or tools to not work correctly.
+
+ Please download the official, updated version of Termux from F-Droid:
+https://f-droid.org/packages/com.termux/
+
+Using the F-Droid version ensures full compatibility with MyLinux and advanced Linux tools.
+
+
 
 ---
 
-## 📦 Requirements
+##  Key Features
+
+-  One-click installation — Fully automated setup process  
+-  Interactive menu system — Beautiful CLI interface with 8+ integrated tools  
+-  Pre-installed tools — Network scanning, system monitoring, and development tools  
+-  Colorful interface — ASCII banners with `figlet` and `lolcat`  
+-  System information — Automatic `neofetch` display on login  
+-  Auto-updater — Keep all tools current with one command  
+-  Uninstaller included — Clean removal when needed  
+
+---
+
+##  Requirements
 
 - Android device with Termux installed  
 - 2GB+ free storage (recommended)  
@@ -44,7 +59,7 @@ A lightweight, feature-rich Arch Linux environment for Termux
 
 ---
 
-## ⚡ Quick Installation
+##  Quick Installation
 
 ### Method 1: Direct Download & Execute
 
@@ -71,13 +86,13 @@ chmod +x install-mylinux.sh
 
 ---
 
-## 📂 What Gets Installed
+##  What Gets Installed
 
-### 🧰 System Tools
+###  System Tools
 
 - `htop`, `neofetch`, `tree`, `nano`, `vim`, `git`
 
-### 🌐 Network Tools
+###  Network Tools
 
 - `nmap`, `curl`, `wget`, `openssh`, `whois`, `net-tools`, `dnsutils`
 
