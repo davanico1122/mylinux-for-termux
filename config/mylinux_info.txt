@@ -1,0 +1,144 @@
+═══════════════════════════════════════════════════════════════════════════════
+███╗   ███╗██╗   ██╗██╗     ██╗███╗   ██╗██╗   ██╗██╗  ██╗
+████╗ ████║╚██╗ ██╔╝██║     ██║████╗  ██║██║   ██║╚██╗██╔╝
+██╔████╔██║ ╚████╔╝ ██║     ██║██╔██╗ ██║██║   ██║ ╚███╔╝ 
+██║╚██╔╝██║  ╚██╔╝  ██║     ██║██║╚██╗██║██║   ██║ ██╔██╗ 
+██║ ╚═╝ ██║   ██║   ███████╗██║██║ ╚████║╚██████╔╝██╔╝ ██╗
+╚═╝     ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝
+═══════════════════════════════════════════════════════════════════════════════
+            Advanced Arch Linux Environment for Termux v3.0
+═══════════════════════════════════════════════════════════════════════════════
+
+INSTALLATION DATE: %INSTALL_DATE%
+VERSION: 3.0
+CREATED BY: Davanico
+
+═══════════════════════════════════════════════════════════════════════════════
+                         QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+[STARTING MYLINUX]
+  • From Termux: Type 'mylinux' to enter the environment
+  • Auto-start: The interactive menu will launch automatically
+
+[BASIC COMMANDS]
+  • menu      : Show interactive menu system
+  • update    : Update system packages and tools
+  • scan      : Quick network scan (nmap -sn)
+  • speedtest : Run internet speed test
+  • fontlist  : Show available figlet fonts
+  • exit      : Exit MyLinux environment
+
+[FILE MANAGEMENT]
+  • ll    : List files in detail (ls -alF)
+  • la    : List all files including hidden (ls -A)
+  • tree  : Show directory structure (tree -L 3)
+  • extract: Extract compressed files (supports zip, tar, rar, etc)
+
+[PACKAGE MANAGEMENT]
+  • install <package> : Install new package (sudo pacman -S)
+  • search <keyword>  : Search for packages (pacman -Ss)
+  • remove <package>  : Remove package (sudo pacman -R)
+
+═══════════════════════════════════════════════════════════════════════════════
+                         INSTALLED COMPONENTS
+═══════════════════════════════════════════════════════════════════════════════
+
+[SYSTEM TOOLS]
+  ✓ htop      : Interactive process viewer
+  ✓ neofetch  : System information tool
+  ✓ tree      : Directory listing in tree format
+  ✓ git       : Version control system
+  ✓ base-devel: Development tools (make, gcc, etc)
+  ✓ unzip     : Zip archive extraction
+  ✓ which     : Locate command binaries
+
+[NETWORK TOOLS]
+  ✓ nmap      : Network exploration and security auditing
+  ✓ curl      : Data transfer tool with URL syntax
+  ✓ wget      : Network downloader
+  ✓ openssh   : SSH client and server
+  ✓ bind      : DNS utilities (nslookup, dig)
+  ✓ whois     : Domain information lookup
+  ✓ net-tools : Basic networking utilities (netstat, ifconfig)
+  ✓ speedtest-cli: Internet speed testing
+
+[PROGRAMMING]
+  ✓ python    : Python 3 interpreter
+  ✓ python-pip: Python package manager
+  ✓ nano      : Command-line text editor
+  ✓ vim       : Advanced text editor
+
+[VISUAL TOOLS]
+  ✓ figlet    : ASCII text banner generator
+  ✓ lolcat    : Rainbow coloring for text
+  ✓ toilet    : Alternative ASCII text generator (optional)
+
+═══════════════════════════════════════════════════════════════════════════════
+                         CUSTOMIZATION GUIDE
+═══════════════════════════════════════════════════════════════════════════════
+
+[CHANGING BANNER]
+  1. Type 'menu' to open interactive menu
+  2. Select option [8] 🎨 Customize Banner
+  3. Choose from available fonts or use default
+
+[ADDING ALIASES]
+  Edit ~/.bashrc and add new aliases:
+    alias short='long command'
+  
+  Example:
+    alias ports='netstat -tuln'
+
+[CHANGING THEME]
+  1. Install preferred theme engine (e.g., oh-my-zsh)
+  2. Configure in ~/.bashrc or ~/.zshrc
+  3. Recommended themes for mobile:
+     • termux-style
+     • powerlevel10k
+
+═══════════════════════════════════════════════════════════════════════════════
+                         TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+[COMMON ISSUES]
+  • Internet connection not working:
+    - Run: pacman -Syu --noconfirm
+    - Run: pacman -S networkmanager
+
+  • Storage full:
+    - Clean package cache: sudo pacman -Sc
+    - Remove unused packages: sudo pacman -Rns $(pacman -Qtdq)
+
+  • Menu not starting automatically:
+    - Ensure ~/.bashrc contains: 'mylinux-menu' at the end
+
+[MAINTENANCE COMMANDS]
+  • Update all: sudo pacman -Syu && pip install -U lolcat speedtest-cli
+  • Clean cache: sudo pacman -Sc
+  • Fix broken: sudo pacman -Syu --overwrite '*'
+
+═══════════════════════════════════════════════════════════════════════════════
+                         UNINSTALLATION
+═══════════════════════════════════════════════════════════════════════════════
+
+To completely remove MyLinux:
+  1. Exit MyLinux environment
+  2. In Termux, type: uninstall-mylinux
+  3. Confirm uninstallation
+
+Note: This will remove all MyLinux files and configuration.
+
+═══════════════════════════════════════════════════════════════════════════════
+                         SUPPORT & CONTACT
+═══════════════════════════════════════════════════════════════════════════════
+
+GitHub: https://github.com/yourusername/mylinux
+Issues: https://github.com/yourusername/mylinux/issues
+Email: davanico@example.com
+
+For community support, join our Telegram group: t.me/mylinux_support
+
+═══════════════════════════════════════════════════════════════════════════════
+            Thank you for using MyLinux - Lightweight Arch for Termux!
+═══════════════════════════════════════════════════════════════════════════════
