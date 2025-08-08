@@ -9,7 +9,7 @@ print_banner() {
     echo "██║ ╚═╝ ██║   ██║   ███████╗██║██║ ╚████║╚██████╔╝██╔╝ ██╗"
     echo "╚═╝     ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝"
     echo "═══════════════════════════════════════════════════════════════════════════════"
-    echo -e "${WHITE}        Advanced Arch Linux Environment for Termux v3.0"
+    echo -e "${WHITE}        Advanced Arch Linux Environment for Termux v1.0"
     echo -e "${YELLOW}                    Created by: Davanico"
     echo -e "${CYAN}═══════════════════════════════════════════════════════════════════════════════${NC}"
     echo
