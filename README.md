@@ -92,7 +92,9 @@ This project uses proot-distro to provide an isolated Linux environment without 
 
 ```bash
 # Download and run the installation script
-curl -L https://raw.githubusercontent.com/yourusername/mylinux/main/installer.sh | bash
+curl -fsSL -o installer.sh https://raw.githubusercontent.com/davanico1122/mylinux-for-termux/main/installer.sh
+bash installer.sh
+
 ```
 
 The installation process will:
@@ -111,7 +113,7 @@ The installation process will:
 git clone https://github.com/davanico1122/mylinux-for-termux.git
 
 # 2. Navigate to directory
-cd mylinux
+cd mylinux-for-termux
 
 # 3. Make installer executable
 chmod +x installer.sh
