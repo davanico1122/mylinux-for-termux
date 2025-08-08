@@ -2,7 +2,7 @@
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # MyLinux - Lightweight Arch Linux Environment for Termux
-# Advanced Installation Script v3.0
+# Advanced Installation Script v1.0
 # 
 # Created by: Davanico
 # License: MIT
