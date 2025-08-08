@@ -10,7 +10,7 @@ Created by: Davanico
 ═══════════════════════════════════════════════════════════════════════════════
 
 INSTALLATION DATE: $(date)
-VERSION: 3.0
+VERSION: 1.0
 
 QUICK START:
 - From Termux: Type 'mylinux' to enter the environment
